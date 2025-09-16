@@ -9,32 +9,29 @@
     
     <title>Bem-vindo à Primavera!</title>
   </head>
+
+
   <body>
     <header class="header">
       <video class="video" autoplay muted loop playsinline>
         <source src="/media/videobg.mov" type="video/mp4" />
       </video>
-
-      <div class="header-title">
+      <div class="titulo-principal">
         <h1>Bem-vindo à Primavera!</h1>
-      </div>
-
       <a href="#primavera">
       <div class="botao">
-        <div class="botao-child"></div>
         <div class="explorar">
           Explorar<i class="ri-arrow-down-line"></i>
+          </div>
         </div>
-      </div>
       </a>
     </header>
 
-    <div class="card-container" id="primavera">
-      <div class="card1">
-        <h1>
+    <!-- SEÇÃO PRIMAVERA -->
+    <section class="secao-primavera" >
+      <h1 class="titulo-secao" id="primavera" >
           <span>O que é a </span>
-          <span class="primavera">Primavera</span>
-          <span>?</span>
+          <span class="primavera">Primavera</span>?
         </h1>
         <p class="p-primavera">
           A primavera é uma das quatro estações do ano, caracterizada pelo
@@ -44,14 +41,50 @@
           coloridos e maior atividade de insetos e animais. No Hemisfério Sul, a
           primavera começa por volta de 23 de setembro e vai até 21 de dezembro.
         </p>
-      </div>
-    </div>
+    </section>
 
-    <div class="card-container">
-      <span class="card-title">O que há de interessante?</span>
-      <div class="card1">
-        <img src="/media/flores.jpg" alt="campo com flores" width="400px" height="412px">
-      </div>
+    <!-- SEÇÃO CARDS -->
+    <section class="secao-cards">
+      <h1 class="titulo-secao">
+          <span>O que há de interessante?</span>
+        </h1>
+        
+        <div class="card-formatavao">
+        <!-- CARD 1 -->
+        <div class="card">
+            <img src="/media/flores.jpg" alt="Flores coloridas desabrochando na primavera">
+            <div class="card-conteudo">
+                <h3 class="card-titulo">Natureza</h3>
+                <p class="card-descricao">
+                    A estação é marcada pelo desabrochar de flores como cerejeiras, ipês e tulipas, criando paisagens deslumbrantes.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <img src="/media/moda.jpg" alt="retrato de uma menina bem vestida">
+            <div class="card-conteudo">
+                <h3 class="card-titulo">Moda</h3>
+                <p class="card-descricao">
+                    A moda se inspira nas cores e no frescor da estação, trazendo peças leves, estampas florais e combinações mais descontraídas que refletem a energia vibrante da natureza.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <img src="/media/cinema.jpg" alt="Vista de uma sala de cinema">
+            <div class="card-conteudo">
+                <h3 class="card-titulo">Entretenimento</h3>
+                <p class="card-descricao">
+                    O entretenimento ganha destaque com atividades ao ar livre, além de novidades no cinema e nos games, acompanhando o clima animado e cheio de novidades da estação.
+                </p>
+            </div>
+        </div>
     </div>
+  </section>
+</section>
+
   </body>
 </html>
