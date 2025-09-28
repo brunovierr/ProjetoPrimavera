@@ -1,6 +1,9 @@
 /* resolução = 1366x768*/
 
+
+
 /*  HEADER DO SITE */
+
 .header {
   position: relative;
   width: 100%;
@@ -12,11 +15,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  mask-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1)
-  ); 
+  mask-image: linear-gradient(to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1));
 }
 
 .titulo-principal {
@@ -26,8 +27,8 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   color: white;
   text-align: center;
   text-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
@@ -37,7 +38,8 @@
   position: absolute;
   bottom: 50px;
   padding: 10px 30px;
-  right: 19%; /*No pc da faculdade fica alinhado com 15% */
+  right: 19%;
+  /*No pc da faculdade fica alinhado com 15% */
   top: 56%;
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid #fff;
@@ -58,13 +60,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px; 
+  gap: 5px;
 }
 
-.botao:hover{
-    background-color: #fff;
-    color: #cb9df0;
-    
+.botao:hover {
+  background-color: #fff;
+  color: #cb9df0;
+
 }
 
 .botao i {
@@ -82,6 +84,7 @@
   color: #fff;
   text-align: center;
   filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.05));
+  margin-top: 50px;
   margin-left: 15%;
   margin-right: 15%;
   justify-content: center;
@@ -90,7 +93,7 @@
 
 
 /*  SEÇÕES PROPRIAS  */
-.secao-primavera{
+.secao-primavera {
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -112,21 +115,20 @@
 }
 
 .card-formatavao {
-  display: flex;         
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 30px; 
+  gap: 20px;
+  margin-top: 30px;
   margin-left: 15%;
   margin-right: 15%;
-  flex-grow: 1;     
 }
 
 .card {
-  border-radius: 15px; 
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); 
-  max-width: 250px; 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
   max-height: 450px;
   justify-content: space-between;
   flex-direction: column;
@@ -148,7 +150,7 @@
 }
 
 .card-conteudo {
-  padding: 10px; 
+  padding: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -163,46 +165,38 @@
 
 .card-descricao {
   text-align: justify;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   color: rgba(90, 90, 90, 1);
   line-height: 1.5;
   text-wrap: balance;
 }
 
-.container-titulo{
-  margin-top: 40px;
-  width: 100%;
-  height: 60px;
-  align-items: center;  
-  justify-content: center;
-    background-color:rgba(161, 120, 237, 0.2);
-}
-
-.titulo-geek {
+.container-titulo {
   position: relative;
   font-size: 52px;
   font-weight: 700;
   color: #fff;
   text-align: center;
   filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.05));
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-top: 50px;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  height: 80px;
+  background-color: rgba(161, 120, 237, 0.25);
+
 }
 
-.subtitulo-secao{
+.subtitulo-secao {
   margin-left: 15%;
   font-size: 30px;
   color: white;
   filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 1));
 }
 
-.lista-jogos{
+.lista-jogos {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
   padding: 10px;
   margin-left: 15%;
@@ -211,66 +205,31 @@
 
 .card-jogos {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  max-height: 350px;
   border-radius: 15px;
-  overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   background-color: white;
   border: 1px solid rgba(203, 158, 240, 1);
-  padding: 30px; 
+  padding: 15px;
 }
 
-.card-jogos img {        
-  height: 200px;
-  width: 300px;     
+.card-jogos img {
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
- 
 
-.rodape-card {
-  display: flex;
-  justify-content: space-between;
+.rodape-card{
+  justify-content: left;
   align-items: center;
-  margin-top: auto;
-  padding-top: 15px;
-  border-top: 1px solid rgba(203, 158, 240, 0.4);
-}
-
-.info-jogo {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  color: rgba(90, 90, 90, 1);
-}
-
-.preco {
-  font-size: 18px;
-  font-weight: bold;
-  color: #a178ed;
-}
-
-.lancamento {
-  font-size: 14px;
-  color: rgba(90, 90, 90, 0.8);
-}
-
-.comprar {
-  background-color: #a178ed;
-  border: none;
-  border-radius: 25px;
-  color: #fff;
+  text-align: left;
   font-size: 16px;
-  padding: 8px 20px;
-  text-decoration: none;
-  transition: 0.3s; /****/
-}
+  font-weight: 400;
+  color: rgba(90, 90, 90, 1);
 
-.comprar:hover {
-  background-color: #cb9df0;
-  color: #fff;
 }
-
+/* arrumar botao de comprar e o rodape do card.*/
 
 
 body,
@@ -279,17 +238,15 @@ html {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
-  height: auto;          /* deixa crescer conforme o conteúdo */
-  min-height: 100vh;     /* garante que ocupa ao menos 1 tela */
-  overflow-x: hidden;
-  background: linear-gradient(
-    180.02deg,
-    #cb9df0,
-    #f0c1e1 27.88%,
-    #fddbbb 65.38%,
-    #fff9bf
-  );
-  background-attachment: scroll;
+  height: 100%;
+  background: linear-gradient(180.02deg,
+      #cb9df0,
+      #f0c1e1 27.88%,
+      #fddbbb 65.38%,
+      #fff9bf);
+  position: relative;
+  min-height: 600vh;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   background-size: cover;
 }
